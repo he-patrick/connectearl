@@ -7,46 +7,95 @@
     <title>Document</title>
 
     <style>
-        body{background-color: gray}
+        body{
+            background-color: #285400 ;
+            font-family: Verdana, Geneva, Tahoma, serif;
+            margin: 0;
+
+        }
 
         .img {
             padding: 10px 100px;
             width: 10%;
             border-radius: 100px;
+            border-color: #285400;
         }
         .header-green {
-            color: green;
-            font: verdana;
+            color: #489400;
             padding: 10px 100px;
+            overflow: hidden;
+        }
+        .header-black {
+            color: black;
+            padding: 10px 100px;
+            font-size: x-large;
         }
         .header-yellow {
-            color: rgba(255, 255, 0, 0.773);
-            font: verdana;
+            color: #fdf202;
         }
         .top-left-button-span{
             float: right;
-        
+            cursor: default;
         }
         .top-left-buttons{
             padding: 10px;
             border-radius: 100px;
+        }
+        .top-left-buttons:hover:not(:disabled) {
+            filter: brightness(1.1);
+            -webkit-filter: brightness(1.1);
+            cursor: pointer;
+        }
+        .search-bar{
+            background-color: white;
+            border-color: black;
+            border-radius: 100px;
             font: verdana;
+            padding: 10px;
+            color: black;
+        }
+        .search-bar::placeholder{
+            color: black;
+        }
+        .search-bar:hover:not(:disabled) {
+            filter: brightness(1.1);
+            -webkit-filter: brightness(1.1);
+            cursor: text;
+        }
+        .main-block{
+            background-color: white;
+            height: 1000px;
         }
 
+       
+        
     </style>
 
 </head>
 <body>
     <h1 class="header-green">
         Connect <span class="header-yellow">Earl</span>
+
         <span class="top-left-button-span">
             <button class="top-left-buttons">Home</button>
             <button class="top-left-buttons">School</button>
-            <button class="top-left-buttons">Search</button>
+            <button class="top-left-buttons">Discover</button>
             <button class="top-left-buttons">Sign-in</button>
+            <input type="text" class="search-bar" placeholder="Search..">
         </span>
+
+        
     </h1>
-    <img src="Patrick_He.jpg" class="img">
- 
+    
+
+    <div class="main-block">
+        <br><br><br><img src="Patrick_Star.svg.png" class="img">
+        <h1 class="header-black">
+            Patrick He
+        </h1>
+    </div>
+    
+
+
 </body>
 </html>
