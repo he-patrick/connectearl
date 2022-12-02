@@ -7,6 +7,11 @@
     <title>Document</title>
 
     <style>
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
         body{
             background-color: #285400 ;
             font-family: Verdana, Geneva, Tahoma, serif;
@@ -77,10 +82,19 @@
         Connect <span class="header-yellow">Earl</span>
 
         <span class="top-left-button-span">
-            <button class="top-left-buttons">Home</button>
-            <button class="top-left-buttons">School</button>
-            <button class="top-left-buttons">Discover</button>
-            <button class="top-left-buttons">Sign-in</button>
+
+            <a href="home.html" class="top-left-buttons">
+                <button class="top-left-buttons">Home</button>
+            </a>
+            
+            <a href="discover.html" class="top-left-buttons">
+                <button class="top-left-buttons">Discover</button>
+            </a>
+
+            <a href="signin.html" class="top-left-buttons">
+                <button class="top-left-buttons">Sign In</button>
+            </a>
+
             <input type="text" class="search-bar" placeholder="Search..">
         </span>
 
