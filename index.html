@@ -13,9 +13,10 @@
             color: black;
         }
         body{
-            background-color: #285400 ;
+            background-color: #ffffff ;
             font-family: Verdana, Geneva, Tahoma, serif;
-            margin: 0;
+            margin: 0px;
+            overscroll-behavior: none;
 
         }
 
@@ -25,13 +26,23 @@
             border-radius: 100px;
             border-color: #285400;
         }
+
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
         .header-green {
-            color: #489400;
-            padding: 10px 100px;
+            background-color: #285400;
+            color: #00ff3c;
+            padding: 10px 50px;
+            margin: 0px;
             overflow: hidden;
+            height: 55px;
         }
         .header-black {
-            color: black;
+            color: rgb(0, 0, 0);
             padding: 10px 100px;
             font-size: x-large;
         }
@@ -42,6 +53,7 @@
             float: right;
             cursor: default;
         }
+        
         .top-left-buttons{
             padding: 10px;
             border-radius: 100px;
@@ -78,7 +90,8 @@
 
 </head>
 <body>
-    <h1 class="header-green">
+
+    <h1 class="header-green sticky">
         Connect <span class="header-yellow">Earl</span>
 
         <span class="top-left-button-span">
